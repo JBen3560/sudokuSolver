@@ -68,10 +68,9 @@ def extract_sudoku_board(image_path):
 
 # Example usage:
 if __name__ == "__main__":
-    sudoku_grid = extract_sudoku_board("sudoku_image.png")
-    print(sudoku_grid)
+    """ sudoku_grid = extract_sudoku_board("sudoku_image.png")
+    print(sudoku_grid) """
 
-    '''
     board = [
         [5, 3, 0, 0, 7, 0, 0, 0, 0],
         [6, 0, 0, 1, 9, 5, 0, 0, 0],
@@ -83,8 +82,19 @@ if __name__ == "__main__":
         [0, 0, 0, 4, 1, 9, 0, 0, 5],
         [0, 0, 0, 0, 8, 0, 0, 7, 9]
     ]
+    
+    board = [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ]
     if solve_sudoku(board):
         print_board(board)
     else:
         print("No solution exists")
-    '''
